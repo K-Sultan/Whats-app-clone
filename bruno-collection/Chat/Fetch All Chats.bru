@@ -1,0 +1,15 @@
+meta {
+  name: Fetch All Chats
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/chat
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}

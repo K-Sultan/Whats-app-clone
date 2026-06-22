@@ -1,0 +1,21 @@
+meta {
+  name: Access 1-on-1 Chat
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{baseUrl}}/api/chat
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "userId": "PASTE_ANOTHER_USERS_ID_HERE"
+  }
+}

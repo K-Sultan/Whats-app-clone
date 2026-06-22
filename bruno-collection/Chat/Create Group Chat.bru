@@ -1,0 +1,22 @@
+meta {
+  name: Create Group Chat
+  type: http
+  seq: 3
+}
+
+post {
+  url: {{baseUrl}}/api/chat/group
+  body: json
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
+
+body:json {
+  {
+    "groupName": "React Devs",
+    "users": ["USER_ID_1", "USER_ID_2"]
+  }
+}

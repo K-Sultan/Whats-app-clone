@@ -1,0 +1,15 @@
+meta {
+  name: Fetch Chat History
+  type: http
+  seq: 2
+}
+
+get {
+  url: {{baseUrl}}/api/message/PASTE_A_CHAT_ID_HERE
+  body: none
+  auth: bearer
+}
+
+auth:bearer {
+  token: {{token}}
+}
