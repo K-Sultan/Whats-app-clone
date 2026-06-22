@@ -25,10 +25,8 @@ app.use(express.json());
 app.use("/api/auth", require("./routes/auth"));
 app.use("/api/chat", require("./routes/chat"));
 app.use("/api/message", require("./routes/message"));
+app.use("/api/user", require("./routes/user"));
 
-app.get("/", (req, res) => {
-    res.send("WhatsApp Clone API is running 🚀");
-});
 
 const PORT = process.env.PORT || 5000;
 
